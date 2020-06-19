@@ -20,10 +20,15 @@ require_once("config.php");
 //$usuario->login("root", "qwerwr");
 //echo $usuario;
 
-$aluno = NEW Usuario("aluno", "@lun0");
+//$aluno = NEW Usuario("aluno", "@lun0");
+//$aluno->insert();
+//echo $aluno;
 
-$aluno->insert();
+$usuario = new Usuario();
+$usuario->loadById(8);
+$usuario->update("professor", "!@#$%¨&*");
+echo $usuario;
 
-echo $aluno;
+
 
  ?>
